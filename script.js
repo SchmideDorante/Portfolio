@@ -1,6 +1,6 @@
 let languagedata = {
     "fr": {
-        "profession":"Photographe & Vidéaste",
+        git"profession":"Photographe & Vidéaste",
         "a_propos":"A propos de Moi",
         "texte_a_propos_de_moi": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minus autem culpa delectus suscipit eligendi architecto debitis distinctio earum sapiente magni ullam dolorem quas amet voluptate similique, natus odit facilis?"
     },
