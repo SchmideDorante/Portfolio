@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
 </head>
-    <!-- Language opotions -->
+    <!-- Language options -->
 <body>
     <header>
         <nav>
@@ -28,38 +28,46 @@
             </div>
         </nav>
     </header>
-    
-    <h1>Schmide Dorante</h1>
-    <h2 id="profession">Photographe & Vidéaste</h2>
-    <address class="contact-info">
-        <p>
-            <img src="images/icon localisation.svg" width="15" height="20" alt="localisation"/>
+    <section id="hero" aria-labelledby="hero-name">
+        <div id="hero-content">
+            <h1 id="hero-name">Schmide Dorante</h1>
+            <h2 id="profession">Photographe & Vidéaste</h2>
+            <address class="contact-info">
+                <p>
+                    <img src="images/icon localisation.svg" width="15" height="20" alt="localisation"/>
             Ile-de-France
-        </p>
-        <p>
-            <img src="images/mail icon.svg" width="15" height="20" alt="Email"/>
-            <a href="mailto:schmide.visuals@gmail.com">schmide.visuals@gmail.com</a>
-        </p>
-        <p>
-            <img src="images/insta icon.svg" width="15" height="20" alt="Instagram"/>
-            <a href="https://www.instagram.com/schmide.visuals/" target="_blank">schmide.visuals</a>
-        </p>
-    </address>
-    
+                </p>
+                <p>
+                    <img src="images/mail icon.svg" width="15" height="20" alt="Email"/>
+                    <a href="mailto:schmide.visuals@gmail.com">schmide.visuals@gmail.com</a>
+                </p>
+                <p>
+                    <img src="images/insta icon.svg" width="15" height="20" alt="Instagram"/>
+                    <a href="https://www.instagram.com/schmide.visuals/" target="_blank">schmide.visuals</a>
+                </p>
+            </address>
+            <a href="#a_propos" class="cta-button">Découvrir min univers</a>
+        </div>
+        <!--Hero, This will be my main portrait-->
+        <div id="hero-image">
+            <img src="images/photographe.jpg" alt="Schmide photographe"/>
+        </div>
+    </section>
     <main>
-        <section>
-        <div id="texte_gauche">
-        <h2 id="a_propos">À propos de Moi</h2>
-        <p id="texte_a_propos_de_moi">
+        <section aria-labelledby="a_propos">
+            <div id="text_gauche">
+                <h2 id="a_propos">À propos de Moi</h2>
+                <p id="texte_a_propos_de_moi">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minus autem culpa delectus suscipit eligendi architecto debitis distinctio earum sapiente magni ullam dolorem quas amet voluptate similique, natus odit facilis?
-        </p>
-        </div>
-        <div id="image_droite">
-        <img src="images/photographe.jpg" width="200" />
-        </div>
+                </p>
+            </div>
+        <!--A propos, This will be a different photo of me-->
+            <div id="image_droite">
+                <!-- Image to be added later -->
+                <img src="images/photographe.jpg" width="200" alt="Schmide Dorante photographe"/>
+            </div>
         </section>
     </main>
-   
+    <script src="script.js"></script>
 </body>
-  <script src="script.js"></script>
 </html>
