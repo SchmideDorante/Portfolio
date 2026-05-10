@@ -8,3 +8,19 @@
   --police-titre:'playfair display', Georgia, serif;
   --police-texte: 'Montserrat', Arial, sans-serif;
 }
+
+/* Reset */
+*, *::before, *::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  background-color: var(--creme);
+  color: var(--sombre);
+  font-family: var(--police-texte);
+  font-weight: 400;
+  line-height: 1.7;
+}
