@@ -1,24 +1,10 @@
-body {
-    background-color: whitesmoke;
-}
-h1 {
-  color: green;
-  font-weight: bold;
-}
-h2 {
-  color: black;
-  font-size: medium;
-}
-#texte_gauche {
-    width: 50%;
-    position: absolute;
-    left: 0;
-    padding: 20px;
-}
-
-#image_droite {
-    width: 50%;
-    position: absolute;
-    right: 0;
-    padding: 20px;
+/* Updating the stylisation of the portfolio */
+:root {
+  --creme: #F5F0E8;
+  --bordeaux: #870024;
+  --sombre: #1A1410;
+  --gris: #5C4A3A;
+  --gris-clair: #8C7B6E;
+  --police-titre:'playfair display', Georgia, serif;
+  --police-texte: 'Montserrat', Arial, sans-serif;
 }
