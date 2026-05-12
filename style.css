@@ -60,3 +60,7 @@ nav {
   display: flex;
   gap: 0.5rem;
 }
+.language-option button {
+  background: none;
+  border: 2px solid var(--bordeaux);
+}
