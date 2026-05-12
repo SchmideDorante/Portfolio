@@ -72,3 +72,8 @@ nav {
   cursor: pointer;
   transition: background 0.3s, color 0.3s;
 }
+
+.language-option button:hover {
+  background-color: var(--bordeaux);
+  color: var(--creme);
+}
