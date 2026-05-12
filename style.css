@@ -63,4 +63,6 @@ nav {
 .language-option button {
   background: none;
   border: 1px solid var(--bordeaux);
+  color: var(--bordeaux);
+  padding: 1rem 1rem;
 }
