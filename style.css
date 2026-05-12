@@ -62,5 +62,5 @@ nav {
 }
 .language-option button {
   background: none;
-  border: 2px solid var(--bordeaux);
+  border: 1px solid var(--bordeaux);
 }
