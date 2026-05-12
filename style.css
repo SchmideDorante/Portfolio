@@ -54,3 +54,9 @@ nav {
   display: flex;
   justify-content: flex-end;
 }
+
+/* language buttons restyling */
+.language-option {
+  display: flex;
+  gap: 1rem;
+}
