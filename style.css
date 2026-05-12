@@ -58,5 +58,5 @@ nav {
 /* language buttons restyling */
 .language-option {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
 }
