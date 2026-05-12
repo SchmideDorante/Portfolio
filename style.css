@@ -66,9 +66,9 @@ nav {
   color: var(--bordeaux);
   padding: 0,4rem 0,8rem;
   font-family: var(--police-texte);
-  font-size: 1rem;
-  font-weight: 200;
-  letter-spacing: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
   cursor: pointer;
-  transition: background 0.5s, color 0.4s;
+  transition: background 0.3s, color 0.3s;
 }
