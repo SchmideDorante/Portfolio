@@ -77,3 +77,28 @@ nav {
   background-color: var(--bordeaux);
   color: var(--creme);
 }
+
+/* Hero styling */
+#hero {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  min-height: 100vh;
+  padding: 3rem;
+  gap: 5rem;
+}
+
+#hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#hero h1 {
+  font-family: var(--police-titre);
+  font-size: clamp(3rem, 8vw, 10rem);
+  font-weight: 700;
+  line-height: 2;
+  color: var(--sombre);
+}
