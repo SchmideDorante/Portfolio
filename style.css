@@ -81,11 +81,11 @@ nav {
 /* Hero styling */
 #hero {
   display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
   min-height: 100vh;
-  padding: 3rem;
-  gap: 5rem;
+  padding: 8rem 4rem 4rem 4rem;
+  gap: 2rem;
 }
 
 #hero-content {
@@ -97,8 +97,8 @@ nav {
 
 #hero h1 {
   font-family: var(--police-titre);
-  font-size: clamp(3rem, 8vw, 10rem);
+  font-size: clamp(3rem, 8vw, 8rem);
   font-weight: 700;
-  line-height: 2;
+  line-height: 1;
   color: var(--sombre);
 }
