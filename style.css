@@ -97,8 +97,17 @@ nav {
 
 #hero h1 {
   font-family: var(--police-titre);
-  font-size: clamp(3rem, 8vw, 8rem);
+  font-size: clamp(3rem, 8vw, 7rem);
   font-weight: 700;
   line-height: 1;
   color: var(--sombre);
+}
+
+#hero h2 {
+  font-family: var(--police-texte);
+  font-size: clamp(1rem, 5vw, 1rem);
+  font-weight: 100;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  color: var(--bordeaux);
 }
