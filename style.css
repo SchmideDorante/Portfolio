@@ -100,7 +100,7 @@ nav {
   font-size: clamp(3rem, 8vw, 7rem);
   font-weight: 700;
   line-height: 1;
-  color: var(--sombre);
+  color: var(--bordeaux);
 }
 
 #hero h2 {
@@ -109,7 +109,7 @@ nav {
   font-weight: 400;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--bordeaux);
+  color: var(--sombre);
 }
 
 /* contact info for hero */
@@ -178,6 +178,7 @@ color: var(--gris);
 #about,
 section:has(#a_propos) {
 display: flex;
+flex-direction: row-reverse;
 align-items: center;
 gap: 4rem;
 padding: 6rem 4rem;
@@ -197,6 +198,7 @@ background-color: var(--creme);
   font-weight: 700;
   color: var(--bordeaux);
   line-height: 1;
+  text-transform: uppercase;
 }
 
 #texte_gauche p {
