@@ -217,10 +217,10 @@ background-color: var(--creme);
 #image_gauche img {
   width: 100%;
   max-width: 450px;
-  height: 500px;
+  height: 600px;
   object-fit: cover;
   object-position: center top;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 /* sport section styling */
