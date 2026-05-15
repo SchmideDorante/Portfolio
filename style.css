@@ -136,3 +136,8 @@ color: var(--gris);
 .contact-info a:hover {
   color: var(--bordeaux);
 }
+
+/* Call to action button style */
+.cta-button {
+  
+}
