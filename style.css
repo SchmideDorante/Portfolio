@@ -173,3 +173,50 @@ color: var(--gris);
   object-position: center top;
   border-radius: 8px 8px 60px 8px;
 }
+
+/* À Propos section style */
+#about,
+section:has(#a-propos) {
+display: flex;
+align-items: center;
+gap: 2rem;
+padding: 6rem 4rem;
+background-color: var(--creme);
+}
+
+#texte-gauche {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#texte_gauche h2 {
+  font-family: var(--police-titre);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 500;
+  color: var(--bordeaux);
+  line-height: 1;
+}
+
+#texte_gauche p {
+  font-family: var(--police-texte);
+  font-size: 1rem;
+  color: var(--gris);
+  line-height: 2;
+}
+
+#image_droite {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#image_droite img {
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 8px;
+}
