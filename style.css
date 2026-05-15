@@ -171,7 +171,7 @@ color: var(--gris);
   height: 600px;
   object-fit: cover;
   object-position: center top;
-  border-radius: 8px 8px 60px 8px;
+  border-radius: 8px;
 }
 
 /* À Propos section style */
