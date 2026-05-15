@@ -208,13 +208,13 @@ background-color: var(--creme);
   line-height: 1.8;
 }
 
-#image_droite {
+#image_gauche {
   flex: 1;
   display: flex;
   justify-content: flex-end;
 }
 
-#image_droite img {
+#image_gauche img {
   width: 100%;
   max-width: 450px;
   height: 500px;
