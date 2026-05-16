@@ -1,6 +1,6 @@
 /* Updating the stylisation of the portfolio */
 :root {
-  --creme: #F5F0E8;
+  --creme: #FAF7F2;
   --bordeaux: #870024;
   --sombre: #1A1410;
   --gris: #5C4A3A;
@@ -235,6 +235,7 @@ section:has(#sport-titre) {
   font-weight: 700;
   color: var(--bordeaux);
   line-height: 1;
+  text-transform: uppercase;
   margin-bottom: 1rem;
 }
 
@@ -498,6 +499,7 @@ section:has(#contact-titre) {
   color: var(--creme);
   line-height: 1;
   font-style: italic;
+  text-transform: uppercase;
 }
 
 #contact-tagline {
@@ -552,7 +554,7 @@ section:has(#contact-titre) .contact-info img {
 /* footer styling */
 footer {
   background-color: var(--bordeaux);
-  color: var(--sombre);
+  color: white;
   text-align: center;
   padding: 2rem;
   font-family: var(--police-texte);
