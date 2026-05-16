@@ -428,11 +428,114 @@ section:has(#offre-titre) {
 
 #offre-contenu {
   background-color: white;
-  border-radius: 15px;
-  padding: 5rem;
+  border-radius: 12px;
+  padding: 3rem;
   max-width: 700px;
   margin: 0 auto;
   text-align: left;
-  box-shadow: 0 15px 50px rgba(123, 18, 50, 0.10);
-  border-left: 5px solid var(--bordeaux);
+  box-shadow: 0 20px 60px rgba(123, 18, 48, 0.07);
+  border-left: 6px solid var(--bordeaux);
+}
+
+#offre-contenu h3 {
+  font-family: var(--police-titre);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--bordeaux);
+  margin-bottom: 1rem;
+}
+
+#offre-contenu p {
+  font-family: var(--police-texte);
+  font-size: 1rem;
+  color: var(--gris);
+  line-height: 2;
+  margin-bottom: 2rem;
+}
+
+#offre-contenu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#offre-contenu ul li {
+  font-family: var(--police-texte);
+  font-size: 1rem;
+  color: var(--sombre);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+#offre-contenu ul li:before {
+  content: '◈';
+  color: var(--bordeaux);
+  flex-shrink: 0;
+}
+
+/* contact info styling */
+section:has(#contact-titre) {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  padding: 5rem 6rem;
+  background-color: var(--sombre);
+}
+
+#contact-texte {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#contact-titre {
+  font-family: var(--police-titre);
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 700;
+  color: var(--creme);
+  line-height: 2;
+  font-style: italic;
+}
+
+#contact-tagline {
+  font-family: var(--police-texte);
+  font-size: 1rem;
+  color: rgba(245, 245, 235, 0.9);
+  line-height: 2;
+}
+
+#section:has(#contact-titre) .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+section:has(#contact-titre) .contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  color: var(--creme);
+}
+
+section:has(#contact-titre) .contact-info a {
+  color: var(--creme);
+  transition: color 0.5s;
+}
+
+section:has(#contact-titre) .contact-info a:hover {
+  color: var(--bordeaux);
+}
+
+section:has(#contact-titre) .contact-info img {
+  filter: invert(1);
+}
+
+#contact-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
 }
