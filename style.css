@@ -539,3 +539,23 @@ section:has(#contact-titre) .contact-info img {
   display: flex;
   justify-content: flex-end;
 }
+
+#contact-image img {
+  width: 100%;
+  max-width: 500px;
+  height: 600px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 8px;
+}
+
+/* footer styling */
+footer {
+  background-color: #0F0C0A;
+  color: rgba(245, 235, 235, 0.5);
+  text-align: center;
+  padding: 2rem;
+  font-family: var(--police-texte);
+  font-size: 0.10rem;
+  letter-spacing: 0.10em;
+}
