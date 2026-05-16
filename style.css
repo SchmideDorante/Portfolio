@@ -171,7 +171,7 @@ color: var(--gris);
   height: 600px;
   object-fit: cover;
   object-position: center top;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 /* À Propos section style */
@@ -220,7 +220,7 @@ background-color: var(--creme);
   height: 600px;
   object-fit: cover;
   object-position: center top;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 /* sport section styling */
@@ -469,7 +469,7 @@ section:has(#offre-titre) {
   gap: 1rem;
 }
 
-#offre-contenu ul li:before {
+#offre-contenu ul li::before {
   content: '◈';
   color: var(--bordeaux);
   flex-shrink: 0;
@@ -507,7 +507,7 @@ section:has(#contact-titre) {
   line-height: 1.8;
 }
 
-#section:has(#contact-titre) .contact-info {
+section:has(#contact-titre) .contact-info {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -551,11 +551,11 @@ section:has(#contact-titre) .contact-info img {
 
 /* footer styling */
 footer {
-  background-color: #0F0C0A;
-  color: rgba(245, 240, 232, 0.4);
+  background-color: var(--bordeaux);
+  color: var(--sombre);
   text-align: center;
   padding: 2rem;
   font-family: var(--police-texte);
-  font-size: 0.8rem;
+  font-size: 1rem;
   letter-spacing: 0.05em;
 }
