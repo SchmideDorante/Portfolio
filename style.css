@@ -1,6 +1,7 @@
 /* Updating the stylisation of the portfolio */
 :root {
-  --creme: #FAF7F2;
+  --font-clair: #F8F8F5;
+  --font-rose: #F9F0F2;
   --bordeaux: #870024;
   --sombre: #1A1410;
   --gris: #5C4A3A;
@@ -181,7 +182,7 @@ align-items: center;
 justify-content: space-between;
 gap: 2rem;
 padding: 8rem 4rem;
-background-color: var(--creme);
+background-color: var(--fond-rose);
 overflow: hidden;
 }
 
@@ -196,7 +197,7 @@ overflow: hidden;
 
 #texte_gauche h2 {
   font-family: var(--police-titre);
-  font-size: clamp(3rem, 7vw, 6rem);
+  font-size: clamp(2rem, 4vw, 4.5rem);
   font-weight: 700;
   color: var(--bordeaux);
   line-height: 1.1;
@@ -228,12 +229,12 @@ overflow: hidden;
 /* sport section styling */
 section:has(#sport-titre) {
   padding: 6rem 4rem;
-  background-color: #EDE7D9;
+  background-color: var(--font-clair);
 }
 
 #sport-titre {
   font-family: var(--police-titre);
-  font-size: clamp(3rem, 7vw, 6rem);
+  font-size: clamp(2rem, 4vw, 4.5rem);
   font-weight: 700;
   color: var(--bordeaux);
   line-height: 1;
@@ -274,7 +275,7 @@ section:has(#portrait-titre) {
   align-items: center;
   gap: 4rem;
   padding: 6rem 4rem;
-  background-color: var(--creme);
+  background-color: var(--fond-rose);
 }
 
 #portrait-galerie {
@@ -306,7 +307,7 @@ section:has(#portrait-titre) {
 
 #portrait-titre {
   font-family: var(--police-titre);
-  font-size: clamp(3rem, 7vw, 6rem);
+  font-size: clamp(2rem, 4vw, 4.5rem);
   font-weight: 700;
   color: var(--bordeaux);
   line-height: 1;
@@ -327,7 +328,7 @@ section:has(#rue-titre) {
   align-items: center;
   gap: 4rem;
   padding: 6rem 4rem;
-  background-color: #EDE7D9;
+  background-color: var(--font-clair);
 }
 
 #rue-texte {
@@ -339,7 +340,7 @@ section:has(#rue-titre) {
 
 #rue-titre {
   font-family: var(--police-titre);
-  font-size: clamp(3rem, 7vw, 6rem);
+  font-size: clamp(2rem, 4vw, 4.5rem);
   font-weight: 700;
   color: var(--bordeaux);
   line-height: 1;
@@ -376,13 +377,13 @@ section:has(#rue-titre) {
 /* Création de contenu section styling */
 section:has(#contenu-titre) {
   padding: 6rem 4rem;
-  background-color: var(--creme);
+  background-color: var(--fond-rose);
   text-align: center;
 }
 
 #contenu-titre {
   font-family: var(--police-titre);
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(2rem, 4vw, 4.5rem);
   font-weight: 700;
   color: var(--bordeaux);
   text-transform: uppercase;
@@ -407,6 +408,7 @@ section:has(#contenu-titre) {
 
 #contenu-galerie video {
   width: 100%;
+  max-height: 400px;
   aspect-ratio: 9/16;
   object-fit: cover;
   border-radius: 8px;
@@ -416,13 +418,13 @@ section:has(#contenu-titre) {
 /* section Mon offre styling */
 section:has(#offre-titre) {
   padding: 6rem 4rem;
-  background-color: #EDE7D9;
+  background-color: var(--font-clair);
   text-align: center;
 }
 
 #offre-titre {
   font-family: var(--police-titre);
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(2rem, 4vw, 4.5rem);
   font-weight: 700;
   color: var(--bordeaux);
   text-transform: uppercase;
@@ -496,7 +498,7 @@ section:has(#contact-titre) {
 
 #contact-titre {
   font-family: var(--police-titre);
-  font-size: clamp(3rem, 7vw, 6rem);
+  font-size: clamp(2rem, 4vw, 4.5rem);
   font-weight: 700;
   color: var(--bordeaux);
   line-height: 1;
