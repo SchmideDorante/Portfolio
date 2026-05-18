@@ -178,26 +178,29 @@ color: var(--gris);
 #about,
 section:has(#a_propos) {
 display: flex;
-flex-direction: row-reverse;
+flex-direction: center;
 align-items: center;
 gap: 4rem;
 padding: 6rem 4rem;
 background-color: var(--creme);
+overflow: hidden;
 }
 
 #texte_gauche {
   flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1.5rem;
+  max-width: 500px;
 }
 
 #texte_gauche h2 {
   font-family: var(--police-titre);
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(3rem, 7vw, 6rem);
   font-weight: 700;
   color: var(--bordeaux);
-  line-height: 1;
+  line-height: 1.1;
   text-transform: uppercase;
 }
 
@@ -210,14 +213,12 @@ background-color: var(--creme);
 
 #image_gauche {
   flex: 1;
-  display: flex;
-  justify-content: flex-end;
+  max-width: 450px;
 }
 
 #image_gauche img {
   width: 100%;
-  max-width: 450px;
-  height: 600px;
+  height: 550px;
   object-fit: cover;
   object-position: center top;
   border-radius: 8px;
