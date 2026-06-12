@@ -442,14 +442,6 @@ section:has(#offre-titre) {
   border-left: 6px solid var(--bordeaux);
 }
 
-#offre-contenu h3 {
-  font-family: var(--police-titre);
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: var(--bordeaux);
-  margin-bottom: 1rem;
-}
-
 #offre-contenu p {
   font-family: var(--police-texte);
   font-size: 1rem;
@@ -565,4 +557,139 @@ footer {
   font-size: 0.9rem;
   font-weight: 500;
   letter-spacing: 0.08em;
+}
+
+/* Making the portfolio responsive - Tablette */
+@media (max-width : 900px){
+    /* Header */
+    nav {
+      justify-content: center;
+    }
+  /* Hero */
+  #hero {
+      flex-direction: column;
+      text-align: center;
+      padding: 6rem 2rem 4rem 2rem;
+    }
+
+  #hero-image{
+      justify-content: center;
+    }
+    
+  #hero-image img {
+      max-width: 100;
+      height: 300px;
+    }
+
+  .contact-info {
+      align-items: center;
+    }
+
+  .cta-button {
+      align-self: center;
+    }
+
+  /* À PROPOS */
+  section:has(#a_propos){
+      flex-direction: column;
+      padding: 4rem 1rem;
+    }
+
+  #image_gauche{
+    max-width: 100%;
+  }
+
+  #image_gauche img{
+    max-width: 100%;
+    height: 500px;
+  }
+
+  /* Sport */
+  section:has(#sport-titre){
+    padding: 4rem 1rem;
+  }
+
+  #sport-galerie{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Portrait */
+  section:has(#portrait-titre){
+    flex-direction: column;
+    padding: 4rem 1rem;
+  }
+
+  #portrait-galerie{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Photo de rue */
+  section:has(#rue-titre) {
+    flex-direction: column;
+    padding: 4rem 1rem;
+  }
+
+  #rue-galerie{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Création de contenu */
+  section:has(#contenu-titre){
+    padding: 4rem 1rem;
+  }
+
+  #contenu-galerie{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Mon offre */
+  section:has(#offre-titre){
+    padding: 4rem 1rem;
+  }
+
+  /* Contact */
+  section:has(#contact-titre){
+    flex-direction: column;
+    padding: 4rem 1rem;
+  }
+
+  #contact-image{
+    display: none;
+  }  
+}
+
+/* Making the portfolio responsive - Mobile */
+@media (max-width: 600px){
+  /* Hero */
+  #hero{
+    padding: 5rem 1.5rem 3rem 1.5rem;
+  }
+  #hero-image img{
+    height: 300px;
+  }
+
+  /* Sport */
+  #sport-galerie{
+    grid-template-columns: 1fr;
+  }
+
+  /* Portrait */
+  #portrait-galerie{
+    grid-template-columns: 1fr;
+  }
+
+  /* Photo de rue */
+  #rue-galerie{
+    grid-template-columns: 1fr;
+  }
+
+  /* Création de contenu */
+  #contenu-galerie{
+    grid-template-columns: 1fr;
+  }
+
+  /* Offre */
+  #offre-contenu{
+    padding: 2rem 1.5rem;
+  }
 }
