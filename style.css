@@ -418,7 +418,7 @@ section:has(#contenu-titre) {
 /* section Mon offre styling */
 section:has(#offre-titre) {
   padding: 6rem 4rem;
-  background-color: var(--font-clair);
+  background-color: var(--fond-clair);
   text-align: center;
 }
 
