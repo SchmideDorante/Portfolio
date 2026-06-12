@@ -84,19 +84,3 @@ function changerLangue(code) {
 
 
 
-
-
-changerLangue("fr");
-
-// Boutons
-document.querySelector("#langue-fr").addEventListener("click", function(){
-    changerLangue("fr");
-});
-
-document.querySelector("#langue-en").addEventListener("click", function(){
-    changerLangue("en");
-});
-
-document.querySelector("#langue-kr").addEventListener("click", function(){
-    changerLangue("kr");
-});
