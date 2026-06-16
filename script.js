@@ -14,6 +14,9 @@ let languagedata = {
         "contenu-description": "Des vidéos pensées pour raconter, valoriser et engager; chaque plan construit une histoire visuelle cohérente.",
         "offre-titre": "Mon Offre",
         "offre-description": "Je propose la couverture photographique d'un match, en mettant l'accent sur les moments clés du jeu, l'engagement des joueurs et l'ambiance du public.",
+        "offre1": "Livraison sous <strong>24 à 48 heures</strong>",
+        "offre2": "Formats optimisés réseaux sociaux - Instagram 4:5 & Stories",
+        "offre3": "<strong>20 à 40 photos retouchées</strong> - version web & haute définition",
         "contact-titre": "Merci",
         "contact-tagline": "Chaque image raconte une histoire. <br/> Si vous souhaitez en écrire une ensemble, je serais ravie d’échanger avec vous.",
         "footer-droits": "Tous droits réservés."
@@ -34,6 +37,9 @@ let languagedata = {
         "contenu-description": "Videos designed to tell stories, highlight key points, and engage viewers; each shot contributes to a cohesive visual narrative.",
         "offre-titre": "My offer",
         "offre-description": "I offer photographic coverage of a game, focusing on key moments, the players' dedication, and the crowd's energy.",
+        "offre1": "LDelivery within <strong>24 to 48 hours</strong>",
+        "offre2": "Social media optimised formats - Instagram 4:5 & Stories",
+        "offre3": "<strong>20 to 40 professionally edited photos</strong> - available in web and high resolution formats",
         "contact-titre": "Thank You",
         "contact-tagline": "Every image tells a story. <br/> If you'd like to create one together, I'd love to hear from you.",
         "footer-droits": "All rights reserved."
@@ -54,6 +60,9 @@ let languagedata = {
         "contenu-description": "이야기를 전달하고 가치를 더하며 사람들의 공감을 이끌어 내기 위해 기획된 영상 콘텐츠입니다. 각각의 장면은 하나의 일관된 시각적 스토리를 완성합니다.",
         "offre-titre": "서비스", 
         "offre-description": "경기의 주요 순간과 선수들의 열정, 그리고 관중의 분위기를 담아내는 스포츠 경기 사진 촬영 서비스를 제공합니다.",
+        "offre1": "<strong>24~48시간 이내</strong> 결과물 제공",
+        "offre2": "소셜 미디어 최적화 포맷 - Instagram 4:5 및 스토리",
+        "offre3": "<strong>20~40장의 보정 사진</strong> - 웹용 및 고해상도 버전",
         "contact-titre": "감사합니다", 
         "contact-tagline": "모든 사진에는 저마다의 이야기가 담겨 있습니다.<br>함께 새로운 이야기를 만들어 가고 싶으시다면 언제든지 편하게 연락해 주세요.",
         "footer-droits": "모든 권리를 보유합니다."
@@ -95,6 +104,8 @@ document.querySelector("#langue-en").addEventListener("click", function() {
 document.querySelector("#langue-kr").addEventListener("click", function() {
     changerLangue("kr");
 });
+let langueSauvegardee = localStorage.getItem("langue") || "fr";
+changerLangue(langueSauvegardee);
 
 // Adding scroll reveal animation
 const observer = IntersectionObserver (function (entries) {

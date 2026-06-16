@@ -561,7 +561,6 @@ footer {
 
 /* Making the portfolio responsive - Tablette */
 @media (max-width : 900px){
-    /* Header */
     nav {
       justify-content: center;
     }
@@ -578,7 +577,7 @@ footer {
     
   #hero-image img {
       max-width: 100;
-      height: 300px;
+      height: 400px;
     }
 
   .contact-info {
@@ -592,7 +591,7 @@ footer {
   /* À PROPOS */
   section:has(#a_propos){
       flex-direction: column;
-      padding: 4rem 1rem;
+      padding: 4rem 2rem;
     }
 
   #image_gauche{
@@ -601,12 +600,12 @@ footer {
 
   #image_gauche img{
     max-width: 100%;
-    height: 500px;
+    height: 400px;
   }
 
   /* Sport */
   section:has(#sport-titre){
-    padding: 4rem 1rem;
+    padding: 4rem 2rem;
   }
 
   #sport-galerie{
@@ -616,7 +615,7 @@ footer {
   /* Portrait */
   section:has(#portrait-titre){
     flex-direction: column;
-    padding: 4rem 1rem;
+    padding: 4rem 2rem;
   }
 
   #portrait-galerie{
@@ -626,7 +625,7 @@ footer {
   /* Photo de rue */
   section:has(#rue-titre) {
     flex-direction: column;
-    padding: 4rem 1rem;
+    padding: 4rem 2rem;
   }
 
   #rue-galerie{
@@ -635,7 +634,7 @@ footer {
 
   /* Création de contenu */
   section:has(#contenu-titre){
-    padding: 4rem 1rem;
+    padding: 4rem 2rem;
   }
 
   #contenu-galerie{
@@ -644,13 +643,13 @@ footer {
 
   /* Mon offre */
   section:has(#offre-titre){
-    padding: 4rem 1rem;
+    padding: 4rem 2rem;
   }
 
   /* Contact */
   section:has(#contact-titre){
     flex-direction: column;
-    padding: 4rem 1rem;
+    padding: 4rem 2rem;
   }
 
   #contact-image{
@@ -697,8 +696,8 @@ footer {
 /* Scroll reveal animation */
 section.reveal {
   opacity: 0;
-  transform: translate(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: translate(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 section.reveal.visible{
   opacity: 1;
