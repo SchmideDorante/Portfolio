@@ -693,3 +693,14 @@ footer {
     padding: 2rem 1.5rem;
   }
 }
+
+/* Scroll reveal animation */
+section.reveal {
+  opacity: 0;
+  transform: translate(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+section.reveal.visible{
+  opacity: 1;
+  transform: translateY(0);
+}

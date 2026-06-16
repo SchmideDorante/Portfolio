@@ -1,6 +1,6 @@
 let languagedata = {
     "fr": {
-        "profession":"Photographe & Vidéaste Freelance",
+        "profession": "Photographe & Vidéaste Freelance",
         "hero-cta": "Découvrir mon univers",
         "a_propos": "À propos de Moi",
         "texte_a_propos_de_moi": "Passionnée par l’art de la photographie et par la création visuelle sous toutes ses formes, je développe un regard sensible porté sur l’humain, la lumière et le mouvement. Photographe freelance, mon parcours est guidé par une fascination pour la mise en scène et par l’envie de capturer des instants sincères, qu’il s’agisse d’un regard, d’un geste oud’une atmosphère. Chaque image est pour moi une opportunité de figer un moment unique et de révéler des détails souvent invisibles à l’œil nu. Mon domaine d’intérêt s’articule autour du portrait, des expressions humaines, du mouvement et de l’activité physique, de la street photography et des scènes de vie, ainsique du lifestyle, du storytelling visuel et de l’événementiel.",
@@ -40,28 +40,31 @@ let languagedata = {
     },
 
     "kr": {
-        "profession": "프리랜서 사진작가 & 영상작가", 
+        "profession": "프리랜서 사진작가 & 영상 제작자", 
         "hero-cta": "작품 보기", 
         "a_propos": "소개", 
-        "texte_a_propos_de_moi": "사진과 영상 예술에 대한 열정으로, 저는 인간, 빛, 움직임에 대한 섬세한 시선을 발전시켜 왔습니다. 프리랜서 사진작가로서 연출에 대한 매력과 진실된 순간을 포착하려는 열망을 바탕으로 활동하고 있습니다.", 
+        "texte_a_propos_de_moi": "사진 예술과 다양한 형태의 시각적 창작에 대한 열정을 바탕으로, 저는 인간과 빛, 그리고 움직임에 대한 섬세한 시선을 키워 왔습니다. 프리랜서 사진작가로 활동하며, 연출에 대한 매력과 진솔한 순간을 포착하고자 하는 열망을 바탕으로 작업하고 있습니다. 한 사람의 시선과 몸짓, 혹은 특정한 분위기까지도 사진으로 담아내고자 하며, 각각의 이미지를 통해 눈에 잘 띄지 않는 특별한 순간과 감정을 기록하고자 합니다. 저는 인물 사진, 인간의 다양한 표정과 움직임, 스포츠와 신체 활동, 스트리트 포토그래피와 일상의 풍경, 그리고 라이프스타일, 비주얼 스토리텔링 및 이벤트 촬영에 관심을 가지고 있습니다.",
         "sport-titre": "스포츠", 
-        "sport-description": "스포츠를 통해 움직임, 노력, 에너지를 포착합니다. 제스처의 강도, 시선의 집중력, 발산되는 에너지를 담아 스포츠 경험을 시각적으로 전달합니다.", 
-        "portrait-titre": "포트레이트 & 라이프스타일", 
-        "portrait-description": "포트레이트와 라이프스타일 사진을 통해 각 개인의 본질과 독특함을 포착합니다. 진실된 감정을 드러내기 위해 시선, 표정, 일상의 세부 사항에 특별한 주의를 기울입니다.", 
-        "rue-titre": "스트리트 사진", 
-        "rue-description": "스트리트 사진을 통해 현실을 관찰하고 빛, 도시의 리듬, 현재의 순간에 이끌린 자연스러운 삶의 장면을 포착합니다.", 
+        "sport-description": "스포츠를 통해 움직임과 노력, 그리고 에너지를 포착하고자 합니다. 한 동작의 강렬함, 시선에 담긴 집중력, 현장에서 느껴지는 생동감을 담아내어 스포츠가 지닌 인간적인 가치를 시각적으로 전달하고자 합니다.",
+        "portrait-titre": "인물 & 라이프스타일", 
+        "portrait-description": "인물 및 라이프스타일 사진을 통해 각 개인의 본질과 고유한 매력을 담아내고자 합니다. 진솔한 감정을 표현하기 위해 시선과 표정, 그리고 일상의 작은 순간들에 세심한 주의를 기울입니다.",
+        "rue-titre": "스트리트 포토그래피", 
+        "rue-description": "스트리트 포토그래피를 통해 현실을 관찰하고, 빛과 도시의 리듬, 그리고 현재의 순간이 만들어 내는 자연스러운 삶의 장면들을 포착하고자 합니다.",
         "contenu-titre": "콘텐츠 제작", 
-        "contenu-description": "이야기하고, 가치를 높이고, 참여를 유도하기 위해 만들어진 영상들.", 
+        "contenu-description": "이야기를 전달하고 가치를 더하며 사람들의 공감을 이끌어 내기 위해 기획된 영상 콘텐츠입니다. 각각의 장면은 하나의 일관된 시각적 스토리를 완성합니다.",
         "offre-titre": "서비스", 
-        "offre-description": "경기의 핵심 순간, 선수들의 활약, 관중의 분위기에 초점을 맞춘 경기 사진 커버리지를 제공합니다.", 
+        "offre-description": "경기의 주요 순간과 선수들의 열정, 그리고 관중의 분위기를 담아내는 스포츠 경기 사진 촬영 서비스를 제공합니다.",
         "contact-titre": "감사합니다", 
-        "contact-tagline": "각 이미지는 하나의 이야기를 담고 있습니다.<br>함께 이야기를 써나가고 싶다면 기꺼이 연락해 주세요.", 
-        "footer-droits": "모든 권리 보유."
-    },
+        "contact-tagline": "모든 사진에는 저마다의 이야기가 담겨 있습니다.<br>함께 새로운 이야기를 만들어 가고 싶으시다면 언제든지 편하게 연락해 주세요.",
+        "footer-droits": "모든 권리를 보유합니다."
+    }
 };
-// Function
+// Function for the language
 function changerLangue(code) {
     let langue = languagedata[code];
+    if (!langue){
+        return;
+    }
     Object.keys(langue).forEach(function(cle){
         let element = document.querySelector("#" + cle);
         if (element) {
@@ -76,11 +79,28 @@ function changerLangue(code) {
         btn.classList.remove("active");
     });
     document.querySelector("#langue-" + code).classList.add("active");
-    // Saving this update choice
     localStorage.setItem("langue", code);
 }
 
+// Updating the year
+document.getElementById("current-year").textContent = new Date().getFullYear();
 
+// Language button
+document.querySelector("#langue-fr").addEventListener("click", function() {
+    changerLangue("fr");
+});
+document.querySelector("#langue-en").addEventListener("click", function() {
+    changerLangue("en");
+});
+document.querySelector("#langue-kr").addEventListener("click", function() {
+    changerLangue("kr");
+});
 
-
-
+// Adding scroll reveal animation
+const observer = IntersectionObserver (function (entries) {
+    entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+        }
+    });
+}, { threshold: 0.1});
