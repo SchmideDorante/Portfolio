@@ -104,3 +104,7 @@ const observer = IntersectionObserver (function (entries) {
         }
     });
 }, { threshold: 0.1});
+document.querySelectorAll("section").forEach(function(section) {
+    section.classList.add("reveal");
+    observer.observe(section);
+})
