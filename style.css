@@ -164,6 +164,7 @@ color: var(--gris);
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  position: relative;
 }
 
 #hero-image img {
@@ -173,6 +174,27 @@ color: var(--gris);
   object-fit: cover;
   object-position: center top;
   border-radius: 8px;
+}
+
+.forme-barre {
+  position: absolute;
+  top: -20px;
+  left: 40px;
+  width: 150px;
+  height: 30px;
+  background-color: var(--bordeaux);
+  z-index: 1;
+}
+
+.forme-demi-cercle {
+  position: absolute;
+  top: -30px;
+  right: -20px;
+  width: 60px;
+  height: 90px;
+  background-color: var(--bordeaux);
+  border-radius: 0 60px 60px 0;
+  z-index: 1;
 }
 
 /* À Propos section style */
@@ -733,4 +755,49 @@ section.reveal.visible{
     background-color: var(--bordeaux);
     left: 50%;
     top: 0;
+}
+
+/* Portfolio decoration */
+/* Sport */
+section:has(#sport-titre){
+  position: relative;
+}
+.forme-barre--haut-droite {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  width: 150px;
+  height: 25px;
+  background-color: var(--bordeaux);
+}
+
+/* My Offer*/
+#offre-contenu {
+  position: relative;
+  overflow: hidden;
+}
+.forme-demi-cercle--coin {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 50px;
+  height: 70px;
+  background-color: var(--bordeaux);
+  border-radius: 0 0 50px 0;
+  opacity: 0.15;
+}
+
+/* Contact */
+#contact-image {
+  position: relative;
+}
+.forme-cercle-plein {
+  position: absolute;
+  bottom: -25px;
+  right: -25px;
+  width: 70px;
+  height: 70px;
+  background-color: var(--bordeaux);
+  border-radius: 50%;
+  z-index: 1;
 }
