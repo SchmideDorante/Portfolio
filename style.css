@@ -687,7 +687,7 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  /* Offre */
+  /* Offer */
   #offre-contenu{
     padding: 2rem 1.5rem;
   }
@@ -702,4 +702,35 @@ section.reveal {
 section.reveal.visible{
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Cursor */
+* {
+  cursor: none;
+}
+#curseur {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+#curseur::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--bordeaux);
+    top: 50%;
+    left: 0;
+}
+#curseur::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: var(--bordeaux);
+    left: 50%;
+    top: 0;
 }

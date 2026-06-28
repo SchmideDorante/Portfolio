@@ -119,3 +119,10 @@ document.querySelectorAll("section").forEach(function(section) {
     section.classList.add("reveal");
     observer.observe(section);
 })
+
+// Cursor 
+const curseur = document.getElementById("curseur");
+document.addEventListener("mousemove", function(e) {
+    curseur.style.left = e.clientX + "px";
+    curseur.style.top = e.clientY + "px";
+});
