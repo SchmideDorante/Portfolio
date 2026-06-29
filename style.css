@@ -90,7 +90,7 @@ nav {
 }
 
 .language-option button:hover,
-.language-option button:active {
+.language-option button.active {
   background-color: var(--bordeaux);
   color: var(--font-clair);
 }
@@ -327,7 +327,8 @@ section:has(#portrait-titre) {
   display: flex;
   align-items: center;
   gap: 5rem;
-  padding: 6rem 4rem;
+  padding: 8rem 4rem;
+  min-height: 90vh;
   background-color: var(--font-rose);
   position: relative;
 }
@@ -364,7 +365,7 @@ section:has(#portrait-titre) {
 #portrait-texte::before {
   content: '';
   position: absolute;
-  top: -1.5rem;
+  top: -3rem;
   left: 0;
   width: 300px;
   height: 38px;
@@ -394,7 +395,7 @@ section:has(#rue-titre) {
   align-items: center;
   gap: 5rem;
   padding: 6rem 4rem;
-  min-height: 85vh;
+  min-height: 90vh;
   background-color: var(--font-clair);
   position: relative;
 }
@@ -410,7 +411,7 @@ section:has(#rue-titre) {
 #rue-texte::before {
   content: '';
   position: absolute;
-  top: -1.5rem;
+  top: -3rem;
   left: 0;
   width: 300px;
   height: 38px;

@@ -91,20 +91,32 @@ function changerLangue(code) {
 }
 
 // Updating the year
-document.getElementById("current-year").textContent = new Date().getFullYear();
+const annee = document.getElementById("current-year");
 
-// Language button
-document.querySelector("#langue-fr").addEventListener("click", function() {
-    changerLangue("fr");
-});
-document.querySelector("#langue-en").addEventListener("click", function() {
-    changerLangue("en");
-});
-document.querySelector("#langue-kr").addEventListener("click", function() {
-    changerLangue("kr");
-});
-let langueSauvegardee = localStorage.getItem("langue") || "fr";
-changerLangue(langueSauvegardee);
+if (annee) {
+    annee.textContent = new Date().getFullYear();
+}
+
+const boutonFr = document.querySelector("#langue-fr");
+const boutonEn = document.querySelector("#langue-en");
+const boutonKr = document.querySelector("#langue-kr");
+
+if (boutonFr && boutonEn && boutonKr) {
+    boutonFr.addEventListener("click", function() {
+        changerLangue("fr");
+    });
+
+    boutonEn.addEventListener("click", function() {
+        changerLangue("en");
+    });
+
+    boutonKr.addEventListener("click", function() {
+        changerLangue("kr");
+    });
+
+    let langueSauvegardee = localStorage.getItem("langue") || "fr";
+    changerLangue(langueSauvegardee);
+}
 
 // Adding scroll reveal animation
 const observer = new IntersectionObserver(function(entries) {
