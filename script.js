@@ -3,7 +3,7 @@ let languagedata = {
         "profession": "Photographe & Vidéaste Freelance",
         "hero-cta": "Découvrir mon univers",
         "a_propos": "À propos de Moi",
-        "texte_a_propos_de_moi": "Passionnée par l’art de la photographie et par la création visuelle sous toutes ses formes, je développe un regard sensible porté sur l’humain, la lumière et le mouvement. Photographe freelance, mon parcours est guidé par une fascination pour la mise en scène et par l’envie de capturer des instants sincères, qu’il s’agisse d’un regard, d’un geste oud’une atmosphère. Chaque image est pour moi une opportunité de figer un moment unique et de révéler des détails souvent invisibles à l’œil nu. Mon domaine d’intérêt s’articule autour du portrait, des expressions humaines, du mouvement et de l’activité physique, de la street photography et des scènes de vie, ainsique du lifestyle, du storytelling visuel et de l’événementiel.",
+        "texte_a_propos_de_moi": "Passionnée par l’art de la photographie et par la création visuelle sous toutes ses formes, je développe un regard sensible porté sur l’humain, la lumière et le mouvement. Photographe freelance, mon parcours est guidé par une fascination pour la mise en scène et par l’envie de capturer des instants sincères, qu’il s’agisse d’un regard, d’un geste ou d’une atmosphère. Chaque image est pour moi une opportunité de figer un moment unique et de révéler des détails souvent invisibles à l’œil nu. Mon domaine d’intérêt s’articule autour du portrait, des expressions humaines, du mouvement et de l’activité physique, de la street photography et des scènes de vie, ainsi que du lifestyle, du storytelling visuel et de l’événementiel.",
         "sport-titre": "Sport",
         "sport-description": "À travers le sport, je m'attache à capturer le mouvement, l'effort et l'énergie. J'essaie de saisir l'intensité d'un geste, la concentration d'un regard et l'énergie qui se dégage, afin de traduire visuellement l'expérience sportive dans toute sa dimension humaine.",
         "portrait-titre": "Portrait & Lifestyle",
@@ -32,10 +32,11 @@ let languagedata = {
         "portrait-description": "Through portraiture and lifestyle photography, I seek to capture the essence and uniqueness of each individual. I pay particular attention to the eyes, facial expressions, and everyday details in order to reveal genuine emotions.",
         "rue-titre": "Events",
         "rue-description": "Through event coverage, I focus on capturing the atmosphere, key moments and the audience's emotions, adapting to the rhythm of each moment to faithfully convey the energy of the venue.",
+        "contenu-titre": "Content Creation",
         "contenu-description": "Videos designed to tell stories, highlight key points, and engage viewers; each shot contributes to a cohesive visual narrative.",
         "offre-titre": "My offer",
         "offre-description": "I offer photography services for your events—parties, weddings, conferences, concerts—focusing on key moments, the guests’ emotions, and the overall atmosphere of the venue.",
-        "offre1": "LDelivery within <strong>24 to 48 hours</strong>",
+        "offre1": "Delivery within <strong>24 to 48 hours</strong>",
         "offre2": "Social media optimised formats - Instagram 4:5 & Stories",
         "offre3": "<strong>20 to 40 professionally edited photos</strong> - available in web and high resolution formats",
         "contact-titre": "Thank You",
@@ -106,17 +107,21 @@ let langueSauvegardee = localStorage.getItem("langue") || "fr";
 changerLangue(langueSauvegardee);
 
 // Adding scroll reveal animation
-const observer = IntersectionObserver (function (entries) {
-    entries.forEach(function(entry){
+const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
         if (entry.isIntersecting) {
             entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
         }
     });
-}, { threshold: 0.1});
+}, {
+    threshold: 0.1
+});
+
 document.querySelectorAll("section").forEach(function(section) {
     section.classList.add("reveal");
     observer.observe(section);
-})
+});
 
 // Cursor 
 const curseur = document.getElementById("curseur");

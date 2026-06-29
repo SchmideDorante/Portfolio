@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Schmide Dorante — Photographe & Vidéaste Freelance en Île-de-France. Spécialisée en portrait, sport, photo de rue, lifestyle et création de contenu." />
-    <meta name="keywords" content="photographe freelance, vidéaste, Île-de-France, portrait, sport, photo de rue, lifestyle, création de contenu, Schmide Dorante" />
+    <meta name="description" content="Schmide Dorante — Photographe & Vidéaste Freelance en Île-de-France. Spécialisée en portrait, sport, événement, lifestyle et création de contenu." />
+    <meta name="keywords" content="photographe freelance, vidéaste, Île-de-France, portrait, sport, événements, lifestyle, création de contenu, Schmide Dorante" />
     <meta name="author" content="Schmide Dorante" />
     <meta name="robots" content="index, follow" />
     <title>Schmide Dorante - Photographe & Vidéaste Freelance</title>
@@ -16,6 +16,7 @@
     <!-- Playfair Display (titres) + Montserrat (corps, sous-titres, nav) -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
     <!-- Language options -->
 <body>
@@ -24,9 +25,9 @@
     <header>
         <nav>
             <div class="language-option">
-                <button id="langue-fr">FR</button>
-                <button id="langue-en">EN</button>
-                <button id="langue-kr">KR</button>
+                <button type="button" id="langue-fr">FR</button>
+                <button type="button" id="langue-en">EN</button>
+                <button type="button" id="langue-kr">KR</button>
             </div>
         </nav>
     </header>
@@ -45,7 +46,7 @@
                 </p>
                 <p>
                     <img src="images/insta icon.svg" width="15" height="20" alt="Instagram"/>
-                    <a href="https://www.instagram.com/schmide.visuals/" target="_blank">schmide.visuals</a>
+                    <a href="https://www.instagram.com/schmide.visuals/" target="_blank" rel="noopener noreferrer">schmide.visuals</a>
                 </p>
             </address>
             <a href="#a_propos" class="cta-button" id="hero-cta">Découvrir mon univers</a>
@@ -62,15 +63,14 @@
             <!--A propos, This will be a different photo of me-->
             <div id="image_gauche">
                 <div class="forme-barre"></div>
-                <!-- Image to be added later -->
                 <img src="images/a-propos.jpg" width="200" alt="Schmide Dorante photographe"/>
             </div>
             <div id="texte_gauche">
                 <h2 id="a_propos">À propos de moi</h2>
                 <p id="texte_a_propos_de_moi"> Passionnée par l’art de la photographie et par la création visuelle sous toutes ses formes, je développe un regard sensible porté sur l’humain, la lumière et le mouvement. <br/>
-                    Photographe freelance, mon parcours est guidé par une fascination pour la mise en scène et par l’envie de capturer des instants sincères, qu’il s’agisse d’un regard, d’un geste oud’une atmosphère. <br/>
+                    Photographe freelance, mon parcours est guidé par une fascination pour la mise en scène et par l’envie de capturer des instants sincères, qu’il s’agisse d’un regard, d’un geste ou d’une atmosphère. <br/>
                     Chaque image est pour moi une opportunité de figer un moment unique et de révéler des détails souvent invisibles à l’œil nu. <br/>
-                    Mon domaine d’intérêt s’articule autour du portrait, des expressions humaines, du mouvement et de l’activité physique, de la street photography et des scènes de vie, ainsique du lifestyle, du storytelling visuel et de l’événementiel.                
+                    Mon domaine d’intérêt s’articule autour du portrait, des expressions humaines, du mouvement et de l’activité physique, de la street photography et des scènes de vie, ainsi que du lifestyle, du storytelling visuel et de l’événementiel.                
                 </p>
             </div>
         </section>
@@ -81,7 +81,6 @@
             <p id="sport-description"> À travers le sport, je m'attache à capturer le mouvement, l'effort et l'énergie. J'essaie de saisir l'intensité d'un geste, la concentration d'un regard et l'énergie qui se dégage, afin de traduire visuellement l'expérience sportive dans toute sa dimension humaine.
             </p>
             <div id="sport-galerie">
-                <!--Photos to be added later-->
                 <img src="images/sport-1.jpg" alt="Photo sport 1" />
                 <img src="images/sport-2.jpg" alt="Photo sport 2" />
                 <img src="images/sport-3.jpg" alt="Photo sport 3" />
@@ -90,7 +89,6 @@
         </section>
         <section id="portrait" aria-labelledby="portrait-titre">
             <div id="portrait-galerie">
-                <!--Photos will be added after -->
                 <img src="images/lifestyle-1.jpg" alt="photo portrait 1">
                 <img src="images/lifestyle-2.jpg" alt="photo portrait 2">
                 <img src="images/lifestyle-3.jpg" alt="photo portrait 3">
@@ -111,19 +109,17 @@
                 </p>
             </div>
             <div id="rue-galerie">
-                <!-- Photos will be added after -->
-                <img src="images/event-1.jpg" alt="photo de rue 1">
-                <img src="images/event-2.jpg" alt="photo de rue 2">
-                <img src="images/event-3.jpg" alt="photo de rue 3">
+                <img src="images/event-1.jpg" alt="événement 1">
+                <img src="images/event-2.jpg" alt="événement 2">
+                <img src="images/event-3.jpg" alt="événement 3">
             </div>
         </section>
-        <section id="création-contenu" aria-labelledby="contenu-titre">
+        <section id="creation-contenu" aria-labelledby="contenu-titre">
             <h2 id="contenu-titre">Création de Contenu</h2>
             <p id="contenu-description">
                 Des vidéos pensées pour raconter, valoriser et engager; chaque plan construit une histoire visuelle cohérente.
             </p>
             <div id="contenu-galerie">
-                <!-- Videos will be added later as well -->
                 <video controls preload="none" aria-label="Vidéo 1">
                     <source src="videos/video-1.mp4" type="video/mp4"/>
                 </video>
@@ -143,7 +139,7 @@
                     Je propose la couverture photographique de vos événements — soirées, mariages, conférences, concerts — en mettant l'accent sur les moments clés, les émotions des invités et l'ambiance générale du lieu.
                 </p>
                 <ul>
-                    <li id="offre1">Livraison sous <strong> 24 à 48 heures </strong></li>
+                    <li id="offre1">Livraison sous <strong>24 à 48 heures </strong></li>
                     <li id="offre2">Formats optimisés réseaux sociaux - Instagram 4:5 &amp; Stories</li>
                     <li id="offre3"><strong>20 à 40 photos retouchées</strong> - version web &amp; haute définition</li>
                 </ul>
@@ -166,7 +162,7 @@
                     </p>
                     <p>
                         <img src="images/insta icon.svg" width="15" height="20" alt="Instagram"/>
-                        <a href="https://www.instagram.com/schmide.visuals/" target="_blank">schmide.visuals</a>
+                        <a href="https://www.instagram.com/schmide.visuals/" target="_blank" rel="noopener noreferrer">schmide.visuals</a>
                     </p>
                 </address>
             </div>
@@ -178,6 +174,9 @@
     </main>
     <footer role="contentinfo">
         <p>© <span id="current-year"></span> Schmide Dorante - <span id="footer-droits"> Tous droits réservés. </span></p>
+        <p>
+            <a href="mentions-legales.html">Mentions légales</a>
+        </p>
     </footer>
     <script src="script.js"></script>
 </body>

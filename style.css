@@ -11,15 +11,21 @@
 }
 
 /* Reset */
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+*, 
+*::before, 
+*::after { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
 }
 
 /* Body */
+html { 
+  scroll-behavior: smooth; 
+}
+
 body {
-  background-color: var(--creme);
+  background-color: var(--font-clair);
   color: var(--sombre);
   font-family: var(--police-texte);
   font-weight: 400;
@@ -38,13 +44,21 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+a:focus-visible, 
+button:focus-visible, 
+video:focus-visible { 
+  outline: 3px solid var(--bordeaux); 
+  outline-offset: 4px; 
+}
+
 /* Styling header */
 header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--creme);
+  background-color: var(--font-clair);
   padding: 1rem 2rem;
   z-index: 100;
   border-bottom: 1px solid rgba(123, 18, 48, 0.15);
@@ -61,11 +75,12 @@ nav {
   display: flex;
   gap: 0.5rem;
 }
+
 .language-option button {
   background: none;
   border: 1px solid var(--bordeaux);
   color: var(--bordeaux);
-  padding: 0,4rem 0,8rem;
+  padding: 0.4rem 0.8rem;
   font-family: var(--police-texte);
   font-size: 0.8rem;
   font-weight: 500;
@@ -74,9 +89,10 @@ nav {
   transition: background 0.3s, color 0.3s;
 }
 
-.language-option button:hover {
+.language-option button:hover,
+.language-option button:active {
   background-color: var(--bordeaux);
-  color: var(--creme);
+  color: var(--font-clair);
 }
 
 /* Hero styling */
@@ -143,7 +159,7 @@ color: var(--gris);
   display: inline-block;
   padding: 1rem 2rem;
   background-color: var(--bordeaux);
-  color: var(--creme);
+  color: var(--font-clair);
   font-family: var(--police-texte);
   font-size: 0.85rem;
   font-weight: 500;
@@ -176,12 +192,13 @@ color: var(--gris);
   border-radius: 8px;
 }
 
+/* Decoration */
 .forme-barre {
   position: absolute;
   top: -20px;
   left: 40px;
-  width: 150px;
-  height: 30px;
+  width: 300px;
+  height: 38px;
   background-color: var(--bordeaux);
   z-index: 1;
 }
@@ -201,10 +218,10 @@ color: var(--gris);
 section:has(#a_propos) {
 display: flex;
 align-items: center;
-justify-content: space-between;
+justify-content: center;
 gap: 2rem;
-padding: 8rem 4rem;
-background-color: var(--fond-rose);
+padding: 6rem 4rem;
+background-color: var(--font-rose);
 overflow: hidden;
 }
 
@@ -214,7 +231,7 @@ overflow: hidden;
   flex-direction: column;
   justify-content: center;
   gap: 1.5rem;
-  max-width: 500px;
+  max-width: 550px;
 }
 
 #texte_gauche h2 {
@@ -236,7 +253,8 @@ overflow: hidden;
 #image_gauche {
   flex: 1;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
+  position:relative;
 }
 
 #image_gauche img {
@@ -245,13 +263,24 @@ overflow: hidden;
   height: 600px;
   object-fit: cover;
   object-position: center top;
-  border-radius: 8px;
+  border-radius: 0px;
 }
 
 /* sport section styling */
 section:has(#sport-titre) {
+  position: relative;
   padding: 6rem 4rem;
   background-color: var(--font-clair);
+}
+
+.forme-barre--haut-droite {
+  position: absolute;
+  top: 3rem;
+  right: 4rem;
+  left: auto;
+  width: 300px;
+  height: 38px;
+  background-color: var(--bordeaux);
 }
 
 #sport-titre {
@@ -261,6 +290,7 @@ section:has(#sport-titre) {
   color: var(--bordeaux);
   line-height: 1;
   text-transform: uppercase;
+  margin-top: 4rem;
   margin-bottom: 1rem;
 }
 
@@ -276,14 +306,15 @@ section:has(#sport-titre) {
 #sport-galerie {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  gap: 1.6rem;
 }
 
 #sport-galerie img {
   width: 100%;
-  height: 280px;
+  aspect-ratio: 9/16;
+  height: auto;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 0px;
   transition: transform 0.4s ease;
 }
 
@@ -295,24 +326,26 @@ section:has(#sport-titre) {
 section:has(#portrait-titre) {
   display: flex;
   align-items: center;
-  gap: 4rem;
+  gap: 5rem;
   padding: 6rem 4rem;
-  background-color: var(--fond-rose);
+  background-color: var(--font-rose);
+  position: relative;
 }
 
 #portrait-galerie {
   flex: 1;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  gap: 2rem;
 }
 
 #portrait-galerie img {
   width: 100%;
-  height: 440px;
+  aspect-ratio: 9/16;
+  height: auto;
   object-fit: cover;
   object-position: center top;
-  border-radius: 4px;
+  border-radius: 0;
   transition: transform 0.4s ease;
 }
 
@@ -325,6 +358,17 @@ section:has(#portrait-titre) {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  position: relative;
+}
+
+#portrait-texte::before {
+  content: '';
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
+  width: 300px;
+  height: 38px;
+  background-color: var(--bordeaux);
 }
 
 #portrait-titre {
@@ -344,13 +388,15 @@ section:has(#portrait-titre) {
   max-width: 500px;
 }
 
-/* styling photo de rue */
+/* styling events */
 section:has(#rue-titre) {
   display: flex;
   align-items: center;
-  gap: 4rem;
+  gap: 5rem;
   padding: 6rem 4rem;
+  min-height: 85vh;
   background-color: var(--font-clair);
+  position: relative;
 }
 
 #rue-texte {
@@ -358,6 +404,17 @@ section:has(#rue-titre) {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  position: relative;
+}
+
+#rue-texte::before {
+  content: '';
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
+  width: 300px;
+  height: 38px;
+  background-color: var(--bordeaux);
 }
 
 #rue-titre {
@@ -381,14 +438,15 @@ section:has(#rue-titre) {
   flex: 1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 1.8rem;
 }
 
 #rue-galerie img {
   width: 100%;
-  height: 280px;
+  aspect-ratio: 9/16;
+  height: auto;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 0;
   transition: transform 0.4s ease;
 }
 
@@ -399,8 +457,9 @@ section:has(#rue-titre) {
 /* Création de contenu section styling */
 section:has(#contenu-titre) {
   padding: 6rem 4rem;
-  background-color: var(--fond-rose);
+  background-color: var(--font-rose);
   text-align: center;
+  position: relative;
 }
 
 #contenu-titre {
@@ -410,6 +469,16 @@ section:has(#contenu-titre) {
   color: var(--bordeaux);
   text-transform: uppercase;
   margin-bottom: 1rem;
+  position : relative;
+}
+
+#contenu-titre::before {
+  content: '';
+  display: block;
+  width: 300px;
+  height: 38px;
+  background-color: var(--bordeaux);
+  margin: 0 auto 1.5rem auto;
 }
 
 #contenu-description {
@@ -423,24 +492,27 @@ section:has(#contenu-titre) {
 
 #contenu-galerie {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(3, minmax(240px,1fr));
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 2rem auto 0 auto;
   text-align: left;
 }
 
 #contenu-galerie video {
   width: 100%;
-  max-height: 400px;
   aspect-ratio: 9/16;
+  height: auto;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 0px;
   background-color: var(--sombre);
+  display: block;
 }
 
 /* section Mon offre styling */
 section:has(#offre-titre) {
   padding: 6rem 4rem;
-  background-color: var(--fond-clair);
+  background-color: var(--font-clair);
   text-align: center;
 }
 
@@ -454,14 +526,26 @@ section:has(#offre-titre) {
 }
 
 #offre-contenu {
+  position: relative;
+  overflow: hidden;
   background-color: white;
   border-radius: 12px;
   padding: 3rem;
-  max-width: 700px;
+  max-width: 850px;
   margin: 0 auto;
   text-align: left;
-  box-shadow: 0 20px 60px rgba(123, 18, 48, 0.07);
-  border-left: 6px solid var(--bordeaux);
+  box-shadow: none;
+  border-left: none;
+}
+
+.forme-demi-cercle--coin {
+  position: absolute;
+  top: -15px;
+  left: -15px; width: 50px; 
+  height: 70px; 
+  background-color: var(--bordeaux); 
+  border-radius: 0 0 50px 0; 
+  opacity: 0.15;
 }
 
 #offre-contenu p {
@@ -500,7 +584,7 @@ section:has(#contact-titre) {
   align-items: center;
   gap: 4rem;
   padding: 6rem 4rem;
-  background-color: var(--creme);
+  background-color: var(--font-clair);
 }
 
 #contact-texte {
@@ -558,6 +642,7 @@ section:has(#contact-titre) .contact-info img {
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  position: relative;
 }
 
 #contact-image img {
@@ -566,19 +651,143 @@ section:has(#contact-titre) .contact-info img {
   height: 600px;
   object-fit: cover;
   object-position: center top;
-  border-radius: 8px;
+  border-radius: 0px;
+}
+
+.forme-cercle-plein {
+  position: absolute;
+  bottom: -25px; right: -25px; 
+  width: 140px; 
+  height: 140px; 
+  background-color: var(--bordeaux); 
+  border-radius: 50%; 
+  z-index: 1;
 }
 
 /* footer styling */
 footer {
   background-color: var(--bordeaux);
-  color: var(--creme);
+  color: var(--font-clair);
   text-align: center;
   padding: 2rem;
   font-family: var(--police-texte);
   font-size: 0.9rem;
   font-weight: 500;
   letter-spacing: 0.08em;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+/* Mentions Légales */
+.mentions-page { 
+  max-width: 900px; 
+  margin: auto; 
+  padding: 80px 20px; 
+} 
+
+.mentions-page h1 { 
+  font-family: var(--police-titre); 
+  font-size: clamp(3rem, 6vw, 5rem); 
+  color: var(--bordeaux); 
+  margin-bottom: 15px; 
+}
+
+.date { 
+  color: var(--gris); 
+  margin-bottom: 60px; 
+} 
+
+.mentions-page section { 
+  border-top: 2px solid var(--bordeaux); 
+  padding: 50px 0; 
+}
+
+.mentions-page h2 { 
+  font-family: var(--police-titre); 
+  font-size: 2.2rem; 
+  color: var(--bordeaux); 
+  margin-bottom: 25px; 
+} 
+
+.mentions-page p, 
+.mentions-page li { 
+  color: var(--gris); 
+  line-height: 1.9; 
+  font-size: 1rem; 
+}
+
+.mentions-page ul { 
+  padding-left: 25px; 
+  margin-top: 20px; 
+} 
+
+.retour, 
+.retour-bas a { 
+  color: var(--bordeaux); 
+  font-weight: 600; 
+}
+
+.retour { 
+  display: inline-block; 
+  margin-bottom: 50px; 
+} 
+
+.retour-bas { 
+  text-align: center; 
+  margin-top: 60px; 
+} 
+
+.retour:hover, 
+.retour-bas a:hover { 
+  text-decoration: underline; 
+}
+
+/* Scroll reveal animation */
+section.reveal { 
+  opacity: 0; 
+  transform: translateY(30px); 
+  transition: opacity 0.8s ease, transform 0.8s ease; 
+}
+
+section.reveal.visible { 
+  opacity: 1; 
+  transform: translateY(0); 
+}
+
+/* Cursor */
+* { 
+  cursor: none; 
+} 
+
+#curseur { 
+  position: fixed; 
+  width: 30px; 
+  height: 30px; 
+  pointer-events: none; 
+  z-index: 9999; 
+  transform: translate(-50%, -50%); 
+}
+
+#curseur::before { 
+  content: ''; 
+  position: absolute; 
+  width: 100%; 
+  height: 1px; 
+  background-color: var(--bordeaux); 
+  top: 50%; 
+  left: 0; 
+}
+
+#curseur::after { 
+  content: ''; 
+  position: absolute; 
+  width: 1px; 
+  height: 100%; 
+  background-color: var(--bordeaux); 
+  left: 50%; 
+  top: 0; 
 }
 
 /* Making the portfolio responsive - Tablette */
@@ -598,7 +807,7 @@ footer {
     }
     
   #hero-image img {
-      max-width: 100;
+      max-width: 100%;
       height: 400px;
     }
 
@@ -611,13 +820,17 @@ footer {
     }
 
   /* À PROPOS */
-  section:has(#a_propos){
-      flex-direction: column;
-      padding: 4rem 2rem;
-    }
+section:has(#a_propos), 
+section:has(#portrait-titre), 
+section:has(#rue-titre), 
+section:has(#contact-titre) { 
+  flex-direction: column; 
+  padding: 4rem 2rem; 
+}
 
   #image_gauche{
     max-width: 100%;
+    justify-content: center;
   }
 
   #image_gauche img{
@@ -625,58 +838,23 @@ footer {
     height: 400px;
   }
 
+  section:has(#sport-titre), 
+  section:has(#contenu-titre), 
+  section:has(#offre-titre) { 
+    padding: 4rem 2rem; 
+  }
+
   /* Sport */
-  section:has(#sport-titre){
-    padding: 4rem 2rem;
+  #sport-galerie, 
+  #portrait-galerie, 
+  #rue-galerie, 
+  #contenu-galerie { 
+    grid-template-columns: repeat(2, 1fr); 
   }
 
-  #sport-galerie{
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* Portrait */
-  section:has(#portrait-titre){
-    flex-direction: column;
-    padding: 4rem 2rem;
-  }
-
-  #portrait-galerie{
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* Photo de rue */
-  section:has(#rue-titre) {
-    flex-direction: column;
-    padding: 4rem 2rem;
-  }
-
-  #rue-galerie{
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* Création de contenu */
-  section:has(#contenu-titre){
-    padding: 4rem 2rem;
-  }
-
-  #contenu-galerie{
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* Mon offre */
-  section:has(#offre-titre){
-    padding: 4rem 2rem;
-  }
-
-  /* Contact */
-  section:has(#contact-titre){
-    flex-direction: column;
-    padding: 4rem 2rem;
-  }
-
-  #contact-image{
-    display: none;
-  }  
+  #contact-image { 
+    display: none; 
+  } 
 }
 
 /* Making the portfolio responsive - Mobile */
@@ -689,115 +867,43 @@ footer {
     height: 300px;
   }
 
-  /* Sport */
-  #sport-galerie{
-    grid-template-columns: 1fr;
+  .forme-barre, 
+  .forme-barre--haut-droite, 
+  #portrait-texte::before, 
+  #rue-texte::before, 
+  #contenu-titre::before { 
+    width: 160px; 
+    height: 24px; 
   }
 
-  /* Portrait */
-  #portrait-galerie{
-    grid-template-columns: 1fr;
-  }
+.forme-barre--haut-droite { 
+  right: 1.5rem; 
+} 
 
-  /* Photo de rue */
-  #rue-galerie{
-    grid-template-columns: 1fr;
-  }
-
-  /* Création de contenu */
-  #contenu-galerie{
-    grid-template-columns: 1fr;
-  }
-
-  /* Offer */
-  #offre-contenu{
-    padding: 2rem 1.5rem;
-  }
+#sport-galerie, 
+#portrait-galerie, 
+#rue-galerie, 
+#contenu-galerie { 
+  grid-template-columns: 1fr; 
 }
 
-/* Scroll reveal animation */
-section.reveal {
-  opacity: 0;
-  transform: translate(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-section.reveal.visible{
-  opacity: 1;
-  transform: translateY(0);
+#offre-contenu { 
+  padding: 2rem 1.5rem; 
+} 
+
+.mentions-page { 
+  padding: 60px 20px; 
+} 
 }
 
-/* Cursor */
-* {
-  cursor: none;
-}
-#curseur {
-  position: fixed;
-  width: 30px;
-  height: 30px;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-}
-#curseur::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: var(--bordeaux);
-    top: 50%;
-    left: 0;
-}
-#curseur::after {
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    background-color: var(--bordeaux);
-    left: 50%;
-    top: 0;
-}
 
-/* Portfolio decoration */
-/* Sport */
-section:has(#sport-titre){
-  position: relative;
-}
-.forme-barre--haut-droite {
-  position: absolute;
-  top: 4rem;
-  right: 4rem;
-  width: 150px;
-  height: 25px;
-  background-color: var(--bordeaux);
-}
-
-/* My Offer*/
-#offre-contenu {
-  position: relative;
-  overflow: hidden;
-}
-.forme-demi-cercle--coin {
-  position: absolute;
-  top: -15px;
-  left: -15px;
-  width: 50px;
-  height: 70px;
-  background-color: var(--bordeaux);
-  border-radius: 0 0 50px 0;
-  opacity: 0.15;
-}
-
-/* Contact */
-#contact-image {
-  position: relative;
-}
-.forme-cercle-plein {
-  position: absolute;
-  bottom: -25px;
-  right: -25px;
-  width: 70px;
-  height: 70px;
-  background-color: var(--bordeaux);
-  border-radius: 50%;
-  z-index: 1;
+/* Mobile accessibility cursor */
+@media (pointer: coarse) { 
+  #curseur { 
+    display: none; 
+  } 
+  
+  * { 
+    cursor: auto; 
+  } 
 }
