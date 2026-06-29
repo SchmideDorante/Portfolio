@@ -91,26 +91,27 @@ function changerLangue(code) {
 }
 
 // Updating the year
-const annee = document.getElementById("current-year");
+const year = document.getElementById("current-year");
 
-if (annee) {
-    annee.textContent = new Date().getFullYear();
+if (year) {
+    year.textContent = new Date().getFullYear();
 }
 
-const boutonFr = document.querySelector("#langue-fr");
-const boutonEn = document.querySelector("#langue-en");
-const boutonKr = document.querySelector("#langue-kr");
+const btnFr = document.querySelector("#langue-fr");
+const btnEn = document.querySelector("#langue-en");
+const btnKr = document.querySelector("#langue-kr");
 
-if (boutonFr && boutonEn && boutonKr) {
-    boutonFr.addEventListener("click", function() {
+if (btnFr && btnEn && btnKr) {
+
+    btnFr.addEventListener("click", function () {
         changerLangue("fr");
     });
 
-    boutonEn.addEventListener("click", function() {
+    btnEn.addEventListener("click", function () {
         changerLangue("en");
     });
 
-    boutonKr.addEventListener("click", function() {
+    btnKr.addEventListener("click", function () {
         changerLangue("kr");
     });
 
